@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-use</artifactId>
+        <groupId>fshare.tech</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>starter-build-demo-01</artifactId>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+    </dependencies>
+
+
+
+    <!-- 项目的构建配置 -->
+    <build>
+        <finalName>demo01-starter</finalName>
+        <!-- <build>标签中常见的子元素有<directory>、<finalName>、<plugins>等。<directory>用于指定构建输出的目录，即编译后的class文件和打包后的jar文件存放的位置，默认为${basedir}/target。<finalName>则用于指定打包后的文件名。-->
+        <plugins>
+            <!-- 配置构建插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId> <!-- 插件的groupId -->
+                <artifactId>maven-compiler-plugin</artifactId> <!-- 插件的artifactId -->
+                <version>3.8.1</version> <!-- 插件的版本号 -->
+                <configuration>
+                    <source>11</source> <!-- 源代码使用的Java版本 -->
+                    <target>11</target> <!-- 目标代码编译的Java版本 -->
+                </configuration>
+            </plugin>
+        </plugins>
+        <!--        <finalName>指定别名</finalName>-->
+        <!--        <directory>指定构建输出的目录,即编译后的class文件和打包后的jar文件存放的位置，默认为${basedir}/target</directory>-->
+    </build>
+</project>
