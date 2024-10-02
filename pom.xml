@@ -13,6 +13,8 @@
         <module>springboot-starter/starter-build-demo-01</module>
         <module>springboot-starter/starter-use-test</module>
         <module>springboot-starter/starter-build-demo-02</module>
+        <module>springboot-transation</module>
+        <module>springboot-transation/spring-propagation</module>
     </modules>
 
     <properties>
@@ -67,6 +69,16 @@
                 <artifactId>junit</artifactId>
                 <version>4.13.2</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.1.4</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.33</version>
             </dependency>
         </dependencies>
 

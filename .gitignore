@@ -13,3 +13,5 @@
 /springboot-starter/starter-build-demo-01/target/
 /springboot-starter/starter-build-demo-02/target/
 /springboot-starter/starter-use-test/target/
+/springboot-transation/spring-propagation/target/
+/springboot-transation/spring-propagation/src/main/resources/application-test-own.yml
