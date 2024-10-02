@@ -1,0 +1,7 @@
+server:
+  port: 8091
+my:
+  config:
+    name: xiaoziye
+    password: 123456
+

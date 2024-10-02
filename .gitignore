@@ -15,3 +15,4 @@
 /springboot-starter/starter-use-test/target/
 /springboot-transation/spring-propagation/target/
 /springboot-transation/spring-propagation/src/main/resources/application-test-own.yml
+/springboot-bean/target/
